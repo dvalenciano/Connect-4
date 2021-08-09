@@ -1,0 +1,21 @@
+body {
+  background-color: azure;
+}
+
+section {
+  color: black;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 90px;
+}
+
+.cell {
+  border: 10px black solid;
+}
+
+#box42 {
+  background-color: blueviolet;
+}
