@@ -1,13 +1,7 @@
-let currentPlayer = 'x'
+let currentPlayer = 'X'
 let counter = 0
 let gameActive = false
-let gameState = ["", "", "", "", "", "", "", 
-"", "", "", "", "", "", "", 
-"", "", "", "", "", "", "", 
-"", "", "", "", "", "", "", 
-"", "", "", "", "", "", "", 
-"", "", "", "", "", "", "", 
-"", "", "", "", "", "", "",]
+let gameState = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ]
 
 const winCombos = [
   // horizontal win combos
@@ -37,27 +31,51 @@ const winCombos = [
 ]
 
 
+
 let boxes = document.querySelectorAll('.cell');
+// let startPosition = 
+function checkForWin () {
+  // make array with all of x indices and make array with all of o indices
+  // loop through win combos and for each win combo check every index in win combo if that includes the 
+  // 
+  let xArr = []
+  let oArr = []
+  for (let i = 0; i < gameState.length; i++) {
+    if (gameState[i] === "X") {
+      xArr.push(i)
+    }else if (gameState[i] === "O") {
+      oArr.push(i)
+    }
+  } 
+  console.log(xArr, oArr)
+}
+
+
 for (let i = 0; i < boxes.length; i++) {
-  boxes[i].addEventListener('click', (turnTaken) => {
-    console.log('x')
+  boxes[i].addEventListener('click', function handleClick(event) {
+    if (event.target.innerText === "X" || event.target.innerText === "O") {
+      
+    } else {
+      if (player === "O") {
+        event.target.innerText = "O";
+        gameState[i] = "O"
+        checkForWin()
+        player = "X";
+      } else {
+        event.target.innerText = "X";
+        gameState[i] = "X"
+        checkForWin()
+        player = "O";
+      }
+    }
+    console.log(gameState)
+    console.log(i)
   })
 }
 
 
 
-function handleClick(event, i) {
-  if (event.target.innerText === "x" || event.target.innerText === "o") {
-    return "me"
-  } else {
-    if (player === "x") {
-      event.target.innerText = "x";
-      player = "o";
-    } else {
-      event.target.innerText = "o";
-      player = "x";
-    }
-  }
-  console.log(i)
-}
+
+
+
 
