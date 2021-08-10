@@ -1,6 +1,14 @@
 let currentPlayer = 'x'
-let gameState = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",]
 let counter = 0
+let gameActive = false
+let gameState = ["", "", "", "", "", "", "", 
+"", "", "", "", "", "", "", 
+"", "", "", "", "", "", "", 
+"", "", "", "", "", "", "", 
+"", "", "", "", "", "", "", 
+"", "", "", "", "", "", "", 
+"", "", "", "", "", "", "",]
+
 const winCombos = [
   // horizontal win combos
   [1, 2, 3, 4], [2, 3, 4, 5], [3, 4, 5, 6], [4, 5, 6, 7],
@@ -30,7 +38,11 @@ const winCombos = [
 
 
 let boxes = document.querySelectorAll('.cell');
-let gameActive = false
+for (let i = 0; i < boxes.length; i++) {
+  boxes[i].addEventListener('click', (turnTaken) => {
+    console.log('x')
+  })
+}
 
 
 
