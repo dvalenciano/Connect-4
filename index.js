@@ -51,8 +51,9 @@ function checkForWin () {
   
   for (let j = 0; j < winCombos.length; j++) {
     if (xArr.includes(winCombos[j][0]) && xArr.includes(winCombos[j][1]) && xArr.includes(winCombos[j][2]) && xArr.includes(winCombos[j][3])) {
+      // winner.innerText = "Player X Wins"
       window.location.href = 'pg2.html'
-      winner.innerHTML.innerText === "Player X Wins!"
+      
       console.log("X wins") 
     }
     if (oArr.includes(winCombos[j][0]) && oArr.includes(winCombos[j][1]) && oArr.includes(winCombos[j][2]) && oArr.includes(winCombos[j][3])) {
@@ -86,7 +87,11 @@ for (let i = 0; i < boxes.length; i++) {
   })
 }
 
+let wins = document.querySelector('button')
 
+wins.addEventListener('click', function handleClick(event) {
+  window.location.href = 'pg1.html'
+}) 
 
 
 
