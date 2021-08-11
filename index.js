@@ -1,6 +1,6 @@
 let currentPlayer = 'X'
 let counter = 0
-let gameActive = false
+let gameActive = true
 let gameState = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ]
 
 const winCombos = [
@@ -47,6 +47,15 @@ function checkForWin () {
       oArr.push(i)
     }
   } 
+  
+  for (let j = 0; j < winCombos.length; j++) {
+    if (xArr.includes(winCombos[j][0]) && xArr.includes(winCombos[j][1]) && xArr.includes(winCombos[j][2]) && xArr.includes(winCombos[j][3])) {
+      console.log("X wins")
+    }
+    if (oArr.includes(winCombos[j][0]) && oArr.includes(winCombos[j][1]) && oArr.includes(winCombos[j][2]) && oArr.includes(winCombos[j][3])) {
+      console.log("O wins")
+    }
+  }
   console.log(xArr, oArr)
 }
 
