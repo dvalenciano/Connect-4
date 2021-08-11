@@ -33,7 +33,7 @@ const winCombos = [
 
 
 let boxes = document.querySelectorAll('.cell');
-// let startPosition = 
+let startPosition = document.querySelector('.start')
 function checkForWin () {
   // make array with all of x indices and make array with all of o indices
   // loop through win combos and for each win combo check every index in win combo if that includes the 

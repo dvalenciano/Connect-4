@@ -1,0 +1,1 @@
+let wins = document.querySelector('button')
