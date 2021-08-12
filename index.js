@@ -36,7 +36,7 @@ let boxes = document.querySelectorAll('.cell');
 
 function checkForWin () {
   // make array with all of x indices and make array with all of o indices
-  // loop through win combos and for each win combo check every index in win combo if that includes the 
+  // loop through win combos and for each win combo check every index in win combo if that includes the winning combo
   // 
   let winner = document.querySelector('h4')
   let xArr = []
