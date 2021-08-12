@@ -66,12 +66,6 @@ function checkForWin () {
   console.log(xArr, oArr)
 }
 
-function shoutWinner () {
-  if (checkForWin = true) {
-    let wins = document.querySelector('h4').innerHTML
-    document.querySelector('h4').innerHTML = wins.replace("X", "O")
-  }
-}
 
 for (let i = 0; i < boxes.length; i++) {
   boxes[i].addEventListener('click', function handleClick(event) {
@@ -82,7 +76,6 @@ for (let i = 0; i < boxes.length; i++) {
         event.target.innerText = "O";
         gameState[i] = "O"
         checkForWin()
-        shoutWinner()
         player = "X";
       } else {
         event.target.innerText = "X";
