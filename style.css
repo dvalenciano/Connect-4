@@ -1,21 +1,49 @@
-body {
+.mainPage {
   background-color: azure;
 }
 
+h1 {
+  text-align: center;
+  font-size: 75px;
+}
 section {
   color: black;
 }
 
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.winner {
+  color: aquamarine;
+  font-size: 75px;
+  align-self: center;
+}
+
+#gameReturn {
+  align-self: center;
+}
 .gameboard {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: 90px;
+  border: 1px solid black;
 }
 
 .cell {
   border: 2px black solid;
 }
 
-#box42 {
-  background-color: blueviolet;
+button {
+  background-color: #ffff00;
+  font-size: 25px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.turn {
+  text-align: center;
 }
