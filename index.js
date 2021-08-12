@@ -58,7 +58,7 @@ function checkForWin () {
     
     if (oArr.includes(winCombos[j][0]) && oArr.includes(winCombos[j][1]) && oArr.includes(winCombos[j][2]) && oArr.includes(winCombos[j][3])) {
       // winner.innerHTML = "O Wins"
-      window.location.href = 'pg2.html'
+      window.location.href = 'pg3.html'
       console.log("O wins")
     }
     
