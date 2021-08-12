@@ -26,7 +26,7 @@ section {
   align-items: center;
 }
 
-.winner {
+h4 {
   color: aquamarine;
   font-size: 75px;
   align-self: center;

@@ -38,7 +38,7 @@ function checkForWin () {
   // make array with all of x indices and make array with all of o indices
   // loop through win combos and for each win combo check every index in win combo if that includes the 
   // 
-  let winner = document.querySelector('.winner')
+  let winner = document.querySelector('h4')
   let xArr = []
   let oArr = []
   for (let i = 0; i < gameState.length; i++) {
@@ -57,9 +57,8 @@ function checkForWin () {
     }
     
     if (oArr.includes(winCombos[j][0]) && oArr.includes(winCombos[j][1]) && oArr.includes(winCombos[j][2]) && oArr.includes(winCombos[j][3])) {
+      // winner.innerHTML = "O Wins"
       window.location.href = 'pg2.html'
-      let str = document.getElementById('winner').innerHTML;
-      document.getElementById('winner').innerHTML = str.replace('X', 'O')
       console.log("O wins")
     }
     
@@ -67,6 +66,12 @@ function checkForWin () {
   console.log(xArr, oArr)
 }
 
+function shoutWinner () {
+  if (checkForWin = true) {
+    let wins = document.querySelector('h4').innerHTML
+    document.querySelector('h4').innerHTML = wins.replace("X", "O")
+  }
+}
 
 for (let i = 0; i < boxes.length; i++) {
   boxes[i].addEventListener('click', function handleClick(event) {
@@ -77,6 +82,7 @@ for (let i = 0; i < boxes.length; i++) {
         event.target.innerText = "O";
         gameState[i] = "O"
         checkForWin()
+        shoutWinner()
         player = "X";
       } else {
         event.target.innerText = "X";
