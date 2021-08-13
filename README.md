@@ -2,7 +2,7 @@
 
 Connect 4 game
 
-### Date: 8/9/2021
+### Date: 8/13/2021
 
 #### By: Derek Valenciano
 
