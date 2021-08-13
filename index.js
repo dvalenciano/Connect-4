@@ -35,9 +35,6 @@ const winCombos = [
 let boxes = document.querySelectorAll('.cell');
 
 function checkForWin () {
-  // make array with all of x indices and make array with all of o indices
-  // loop through win combos and for each win combo check every index in win combo if that includes the winning combo
-  // 
   let winner = document.querySelector('h4')
   let xArr = []
   let oArr = []
@@ -52,18 +49,13 @@ function checkForWin () {
   for (let j = 0; j < winCombos.length; j++) {
     if (xArr.includes(winCombos[j][0]) && xArr.includes(winCombos[j][1]) && xArr.includes(winCombos[j][2]) && xArr.includes(winCombos[j][3])) {
       window.location.href = 'pg2.html'
-      // document.getElementById('winner').innerHTML = "X Wins"
-      console.log("X wins") 
     }
     
     if (oArr.includes(winCombos[j][0]) && oArr.includes(winCombos[j][1]) && oArr.includes(winCombos[j][2]) && oArr.includes(winCombos[j][3])) {
-      // winner.innerHTML = "O Wins"
       window.location.href = 'pg3.html'
-      console.log("O wins")
     }
     
   }
-  console.log(xArr, oArr)
 }
 
 
@@ -84,8 +76,6 @@ for (let i = 0; i < boxes.length; i++) {
         player = "O";
       }
     }
-    console.log(gameState)
-    console.log(i)
   })
 }
 
