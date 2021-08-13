@@ -17,9 +17,9 @@ This project is to show the understanding of Javascript, HTML, and CSS principle
 
 **_Technologies Used_**
 
-- HTML
-- CSS
-- JavaScript
+![HTML](html.png)
+![CSS](css.png)
+![JavaScript](javascript.png)
 
 **_Getting Started_**
 
@@ -29,17 +29,18 @@ The idea behind this project is to show the start of an engineering immersive ca
 
 Below are snippets of the early workings that indicate the beginning level of building a connect 4 game using JavaScript.
 
-![screenshot](HTMLScreen.png)
+![screenshot](Gameboard.png)
 
-![screenshot2](CSSScreen.png)
+![screenshot2](xwins.png)
 
-![screenshot3](ResultScreen.png)
+![screenshot3](owins.png)
 
 **_Future Updates_**
 
-- [ ] Update CSS to add appealing styling
-- [ ] Update HTML to add content
-- [ ] completed frame
-- [ ] Base HTML
+- [ ] game tracker to keep count of wins for x and o
+- [ ] Update css to add animated background of a space theme
+- [ ] update game play to resemble tradional connect 4
 
 **_Credits_**
+Eddie Lin - https://jsfiddle.net/elin/7m3bL/
+-The CSS used for the fireworks background was used from this site and this creator
