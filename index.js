@@ -94,7 +94,7 @@ for (let i = 0; i < boxes.length; i++) {
 let wins = document.querySelector('button')
 
 wins.addEventListener('click', function handleClick(event) {
-  window.location.href = 'pg1.html'
+  window.location.href = 'index.html'
 }) 
 
 
