@@ -19,9 +19,9 @@ You can access the game by following this [link!](https://derek-game-project.sur
 
 **_Technologies Used_**
 
-![HTML](html.png)
-![CSS](css.png)
-![JavaScript](javascript.png)
+- HTML
+- CSS
+- JavaScript
 
 **_Getting Started_**
 
