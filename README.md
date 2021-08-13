@@ -44,5 +44,9 @@ Below are snippets of the early workings that indicate the beginning level of bu
 - [ ] update game play to resemble tradional connect 4
 
 **_Credits_**
+
 Eddie Lin - https://jsfiddle.net/elin/7m3bL/
 -The CSS used for the fireworks background was used from this site and this creator
+
+Google Fonts - https://fonts.google.com/specimen/Amatic+SC?query=ama
+Amatic SC was the font used from Google Fonts
