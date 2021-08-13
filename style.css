@@ -1,16 +1,22 @@
 .mainPage {
   background-color: black;
+  font-family: amatic SC;
+}
+
+.page {
+  font-family: amatic SC;
 }
 
 h1 {
   color: orange;
   text-align: center;
-  font-size: 75px;
+  font-size: 125px;
   margin-bottom: 5px;
 }
 
 h2 {
   color: orange;
+  font-size: 45px;
   text-align: center;
   margin-top: 2px;
   margin-bottom: 12px;
@@ -28,7 +34,7 @@ section {
 
 h4 {
   color: aquamarine;
-  font-size: 75px;
+  font-size: 150px;
   align-self: center;
 }
 
@@ -50,7 +56,8 @@ h4 {
 
 button {
   background-color: aquamarine;
-  font-size: 25px;
+  font-family: amatic SC;
+  font-size: 50px;
   border: 1px solid black;
   border-radius: 15px;
   cursor: pointer;
