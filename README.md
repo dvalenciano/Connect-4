@@ -15,6 +15,8 @@ Connect 4 game
 
 This project is to show the understanding of Javascript, HTML, and CSS principles
 
+You can access the game by following this [link!](https://derek-game-project.surge.sh/)
+
 **_Technologies Used_**
 
 ![HTML](html.png)
